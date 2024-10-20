@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* height: 600px; */
+    /* align-items: stretch; */
+    align-items: center;
+    flex-flow: nowrap; /* Não Quebra linha quando não cabe o conteudo */
+    flex-flow: wrap; /* Quebra linha quando não cabe o conteudo */
+    height: 800px;
+}
+
+.container div {
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+.container .box-1 {
+    /* order: 1; */
+    /* flex: 1; */
+    flex-basis: 30%
+}
+.container .box-2 {
+    /* order: 3; */
+    /* flex: 2; */
+    flex-basis: 30%;
+}
+.container .box-3 {
+    /* order: 2; */
+    /* flex: 3; */
+    flex-basis: 30%;
+    align-self: flex-end;
+}
