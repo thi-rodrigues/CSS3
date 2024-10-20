@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box; /* faz com oq a largura não seja influênciado pela margin/padding */
+}
+
+body {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Arima;
+}
+
+.container {
+    background-color: #333;
+    color: #eee;
+    width: 80%; /* fica responsivo com o uso do % */
+     
+    margin: 10%;
+    padding: 60px;
+    border: 3px solid red;
+}
+
+.categoria ul {
+    list-style: none;
+}
+
+/* PSEUDO CLASSES*/
+.categoria ul li:first-child {
+    color: red;
+}
+
+.categoria ul li:last-child {
+    color: green;
+}
+
+.categoria ul li:nth-child(2) {
+    color: blue;
+}
